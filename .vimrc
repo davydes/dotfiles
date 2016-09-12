@@ -17,7 +17,6 @@ Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sleuth'
-Plugin 'tpope/vim-vividchalk' " color-theme
 "Plugin 'tsaleh/vim-align'
 "Plugin 'tsaleh/vim-shoulda'
 "Plugin 'tsaleh/vim-tcomment'
@@ -50,6 +49,10 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'IndexedSearch'
 Plugin 'jquery'
 
+" Themes
+Plugin 'tpope/vim-vividchalk'
+Plugin 'jpo/vim-railscasts-theme'
+
 call vundle#end()
 filetype plugin indent on
 set number
@@ -57,7 +60,7 @@ set pastetoggle=<F7>
 set wildmenu
 set wildmode=longest:full,full
 
-colorscheme vividchalk
+colorscheme railscasts
 if has('gui_running')
   set guioptions-=m  "remove menu bar
   set guioptions-=T  "remove toolbar
