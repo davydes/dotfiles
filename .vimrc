@@ -48,6 +48,7 @@ Plugin 'vim-airline/vim-airline'
 " vim-scripts repos
 Plugin 'IndexedSearch'
 Plugin 'jquery'
+Plugin 'Rename'
 
 " Themes
 Plugin 'tpope/vim-vividchalk'
