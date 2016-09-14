@@ -37,6 +37,10 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-rails'
 "Plugin 'astashov/vim-ruby-debugger'
 
+" JS React
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+
 " GIT
 Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-fugitive'
