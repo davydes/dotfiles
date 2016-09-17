@@ -6,22 +6,12 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'jlanzarotta/bufexplorer'
-
-" original repos on github
+" Base plugin
 Plugin 'tpope/vim-sensible'
+
+" Navigation
+Plugin 'jlanzarotta/bufexplorer'
 Plugin 'scrooloose/nerdtree'
-"Plugin 'tpope/vim-cucumber'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-sleuth'
-"Plugin 'tsaleh/vim-align'
-"Plugin 'tsaleh/vim-shoulda'
-"Plugin 'tsaleh/vim-tcomment'
-Plugin 'slim-template/vim-slim'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'majutsushi/tagbar'
 
 " Snippets
@@ -30,12 +20,21 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
+" Other Languages
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-markdown'
+Plugin 'slim-template/vim-slim'
+Plugin 'kchmck/vim-coffee-script'
+"Plugin 'tpope/vim-cucumber'
+Plugin 'jquery'
+
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-rails'
 "Plugin 'astashov/vim-ruby-debugger'
+Plugin 'thoughtbot/vim-rspec'
 
 " GIT
 Plugin 'tpope/vim-git'
@@ -45,9 +44,15 @@ Plugin 'airblade/vim-gitgutter'
 " Status bar
 Plugin 'vim-airline/vim-airline'
 
-" vim-scripts repos
+" Tools
+Plugin 'tpope/vim-repeat' " repater for plugin maps by '.' command
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-sleuth' " auto adjust idents
+Plugin 'tpope/vim-endwise' " auto end for ruby, shell, vb, c/c++, lua
+"Plugin 'tsaleh/vim-align'
+"Plugin 'tsaleh/vim-shoulda'
+"Plugin 'tsaleh/vim-tcomment'
 Plugin 'IndexedSearch'
-Plugin 'jquery'
 Plugin 'Rename'
 
 " Themes
