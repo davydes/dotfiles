@@ -69,6 +69,7 @@ set number
 set pastetoggle=<F7>
 set wildmenu
 set wildmode=longest:full,full
+set hidden " use hidden buffers
 
 colorscheme railscasts
 if has('gui_running')
@@ -95,3 +96,5 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 
 " TagBar
 nnoremap <silent> <F9> :TagbarToggle<CR>
+
+map <F4> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
