@@ -49,6 +49,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 
 " Tools
+Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-repeat' " repater for plugin maps by '.' command
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sleuth' " auto adjust idents
