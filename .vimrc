@@ -49,6 +49,9 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 
 " Tools
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-repeat' " repater for plugin maps by '.' command
 Plugin 'tpope/vim-surround'
@@ -73,6 +76,7 @@ set wildmode=longest:full,full
 set hidden " use hidden buffers
 
 colorscheme railscasts
+
 if has('gui_running')
   set guioptions-=m  "remove menu bar
   set guioptions-=T  "remove toolbar
