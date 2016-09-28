@@ -20,25 +20,23 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
-" Other Languages
+" Languages
+Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-markdown'
 Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
 "Plugin 'tpope/vim-cucumber'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'jquery'
 
 " Ruby
-Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-rails'
 "Plugin 'astashov/vim-ruby-debugger'
 Plugin 'thoughtbot/vim-rspec'
-
-" JS React
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
 
 " GIT
 Plugin 'tpope/vim-git'
