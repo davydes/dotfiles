@@ -74,6 +74,8 @@ set wildmenu
 set wildmode=longest:full,full
 set hidden " use hidden buffers
 
+set spelllang=ru_yo,en_us
+
 colorscheme railscasts
 
 if has('gui_running')
@@ -102,3 +104,6 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 nnoremap <silent> <F9> :TagbarToggle<CR>
 
 map <F4> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
+
+" Multicursor binding
+let g:multi_cursor_start_key='<F6>'
