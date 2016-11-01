@@ -75,6 +75,8 @@ set wildmenu
 set wildmode=longest:full,full
 set hidden " use hidden buffers
 
+set spelllang=ru_yo,en_us
+
 colorscheme railscasts
 
 if has('gui_running')
@@ -107,7 +109,6 @@ let g:multi_cursor_start_key='<F6>'
 
 map <F4> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
-" RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
