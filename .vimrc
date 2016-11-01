@@ -48,7 +48,7 @@ Plugin 'vim-airline/vim-airline'
 
 " Tools
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Yggdroot/indentLine'
@@ -61,6 +61,7 @@ Plugin 'tpope/vim-endwise' " auto end for ruby, shell, vb, c/c++, lua
 "Plugin 'tsaleh/vim-tcomment'
 Plugin 'IndexedSearch'
 Plugin 'Rename'
+Plugin 'tpope/vim-commentary'
 
 " Themes
 Plugin 'tpope/vim-vividchalk'
@@ -101,4 +102,13 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 " TagBar
 nnoremap <silent> <F9> :TagbarToggle<CR>
 
+" Map start key separately from next key
+let g:multi_cursor_start_key='<F6>'
+
 map <F4> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
