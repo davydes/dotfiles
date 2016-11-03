@@ -62,10 +62,14 @@ Plugin 'tpope/vim-endwise' " auto end for ruby, shell, vb, c/c++, lua
 Plugin 'IndexedSearch'
 Plugin 'Rename'
 Plugin 'tpope/vim-commentary'
+Plugin 'bronson/vim-trailing-whitespace'
 
 " Themes
 Plugin 'tpope/vim-vividchalk'
 Plugin 'jpo/vim-railscasts-theme'
+
+" Time tracker
+Plugin 'wakatime/vim-wakatime'
 
 call vundle#end()
 filetype plugin indent on
@@ -109,6 +113,7 @@ let g:multi_cursor_start_key='<F6>'
 
 map <F4> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
+" Rspec binding
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
