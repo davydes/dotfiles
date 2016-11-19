@@ -35,8 +35,6 @@ Plugin 'jquery'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-rails'
-"Plugin 'astashov/vim-ruby-debugger'
-Plugin 'thoughtbot/vim-rspec'
 
 " GIT
 Plugin 'tpope/vim-git'
@@ -48,7 +46,6 @@ Plugin 'vim-airline/vim-airline'
 
 " Tools
 Plugin 'terryma/vim-multiple-cursors'
-"Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Yggdroot/indentLine'
@@ -56,13 +53,11 @@ Plugin 'tpope/vim-repeat' " repater for plugin maps by '.' command
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sleuth' " auto adjust idents
 Plugin 'tpope/vim-endwise' " auto end for ruby, shell, vb, c/c++, lua
-"Plugin 'tsaleh/vim-align'
-"Plugin 'tsaleh/vim-shoulda'
-"Plugin 'tsaleh/vim-tcomment'
 Plugin 'IndexedSearch'
 Plugin 'Rename'
 Plugin 'tpope/vim-commentary'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'janko-m/vim-test'
 
 " Themes
 Plugin 'tpope/vim-vividchalk'
@@ -83,14 +78,6 @@ set spelllang=ru_yo,en_us
 
 colorscheme railscasts
 
-if has('gui_running')
-  set guioptions-=m  "remove menu bar
-  set guioptions-=T  "remove toolbar
-  set guioptions-=r  "remove right-hand scroll bar
-  set guioptions-=L  "remove left-hand scroll bar
-  set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 14
-  set lines=999 columns=999
-endif
 set grepprg=ack
 
 " Airline
@@ -104,6 +91,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeAutoDeleteBuffer = 1
 
 " TagBar
 nnoremap <silent> <F9> :TagbarToggle<CR>
@@ -113,8 +103,10 @@ let g:multi_cursor_start_key='<F6>'
 
 map <F4> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
-" Rspec binding
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+
+autocmd BufNewFile,BufRead *.slim set ft=slim
