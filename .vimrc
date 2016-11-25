@@ -58,6 +58,9 @@ Plugin 'Rename'
 Plugin 'tpope/vim-commentary'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'janko-m/vim-test'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'Chiel92/vim-autoformat'
 
 " Themes
 Plugin 'tpope/vim-vividchalk'
@@ -110,3 +113,7 @@ nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 
 autocmd BufNewFile,BufRead *.slim set ft=slim
+
+let g:indentLine_enabled=0
+let g:indentLine_leadingSpaceEnabled=0
+let g:indentLine_leadingSpaceChar='.'
