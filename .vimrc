@@ -97,6 +97,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeAutoDeleteBuffer = 1
+let NERDTreeIgnore = ['^\..*\.swp$']
 
 " TagBar
 nnoremap <silent> <F9> :TagbarToggle<CR>
@@ -117,3 +118,6 @@ autocmd BufNewFile,BufRead *.slim set ft=slim
 let g:indentLine_enabled=0
 let g:indentLine_leadingSpaceEnabled=0
 let g:indentLine_leadingSpaceChar='.'
+
+" webpack changes not working without it
+set backupcopy=yes
