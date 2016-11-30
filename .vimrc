@@ -47,6 +47,7 @@ Plugin 'vim-airline/vim-airline'
 " Tools
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/syntastic'
+Plugin 'mtscout6/syntastic-local-eslint.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-repeat' " repater for plugin maps by '.' command
@@ -61,6 +62,7 @@ Plugin 'janko-m/vim-test'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'dbext.vim'
 
 " Themes
 Plugin 'tpope/vim-vividchalk'
@@ -121,3 +123,17 @@ let g:indentLine_leadingSpaceChar='.'
 
 " webpack changes not working without it
 set backupcopy=yes
+
+let g:syntastic_mode_map = { 'mode': 'active',
+                            \ 'active_filetypes': ['ruby', 'javascript'],
+                            \ 'passive_filetypes': [] }
+
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
