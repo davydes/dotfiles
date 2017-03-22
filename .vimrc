@@ -54,6 +54,8 @@ Plugin 'tpope/vim-repeat' " repater for plugin maps by '.' command
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sleuth' " auto adjust idents
 Plugin 'tpope/vim-endwise' " auto end for ruby, shell, vb, c/c++, lua
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
 Plugin 'IndexedSearch'
 Plugin 'Rename'
 Plugin 'tpope/vim-commentary'
@@ -137,3 +139,6 @@ let g:syntastic_mode_map = { 'mode': 'active',
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
+
+:let g:session_autoload = 'no'
+:let g:session_autosave = 'no'

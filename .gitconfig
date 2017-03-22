@@ -15,6 +15,6 @@
 [core]
 	excludesfile = ~/.gitignore
 [http "https://git.flynn.molinos.ru"]
-	sslCAInfo = /home/developer3/.flynn/ca-certs/default.pem
+	sslCAInfo = ~/.flynn/ca-certs/default.pem
 [credential "https://git.flynn.molinos.ru"]
-	helper = /home/developer3/bin/flynn git-credentials
+	helper = ~/bin/flynn git-credentials
