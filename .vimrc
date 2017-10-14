@@ -30,6 +30,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'jquery'
+Plugin 'udalov/kotlin-vim'
 
 " Ruby
 Plugin 'tpope/vim-bundler'
@@ -128,7 +129,7 @@ set backupcopy=yes
 
 let g:syntastic_mode_map = { 'mode': 'active',
                             \ 'active_filetypes': ['ruby', 'javascript'],
-                            \ 'passive_filetypes': [] }
+                            \ 'passive_filetypes': ['java'] }
 
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
@@ -136,9 +137,10 @@ let g:syntastic_mode_map = { 'mode': 'active',
 
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
+let g:syntastic_java_javac_custom_classpath_command = 'play-cp'
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
-:let g:session_autoload = 'no'
-:let g:session_autosave = 'no'
+let g:session_autoload = 'no'
+let g:session_autosave = 'no'
