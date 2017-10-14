@@ -72,7 +72,7 @@ Plugin 'tpope/vim-vividchalk'
 Plugin 'jpo/vim-railscasts-theme'
 
 " Time tracker
-Plugin 'wakatime/vim-wakatime'
+"Plugin 'wakatime/vim-wakatime'
 
 call vundle#end()
 filetype plugin indent on
