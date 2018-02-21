@@ -1,5 +1,6 @@
 [user]
 	name = Eugene Davydov
+	#email = e.davydov@lipt-soft.ru
 	email = davydes@gmail.com
 [push]
 	default = matching
@@ -13,7 +14,3 @@
 	dump = cat-file -p
 [core]
 	excludesfile = ~/.gitignore
-[http "https://git.flynn.host04.molinos.ru"]
-	sslCAInfo = /home/des/.flynn/ca-certs/default.pem
-[credential "https://git.flynn.host04.molinos.ru"]
-	helper = /home/des/bin/flynn git-credentials

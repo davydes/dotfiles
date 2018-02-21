@@ -66,13 +66,11 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'dbext.vim'
+Plugin 'mileszs/ack.vim'
 
 " Themes
 Plugin 'tpope/vim-vividchalk'
 Plugin 'jpo/vim-railscasts-theme'
-
-" Time tracker
-"Plugin 'wakatime/vim-wakatime'
 
 call vundle#end()
 filetype plugin indent on
@@ -99,7 +97,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
-let g:NERDTreeShowHidden = 1
+"let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeAutoDeleteBuffer = 1
 let NERDTreeIgnore = ['^\..*\.swp$']
@@ -144,3 +142,5 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 let g:session_autoload = 'no'
 let g:session_autosave = 'no'
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
